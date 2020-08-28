@@ -1,9 +1,12 @@
-package feecalculator;
+package com.sagban.feecalculator;
+
+import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.stream.Collectors;
 
+@Component("executeProcessingRules")
 public class ExecuteProcessingRules {
 
 	

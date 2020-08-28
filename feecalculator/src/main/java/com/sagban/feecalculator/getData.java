@@ -1,4 +1,4 @@
-package feecalculator;
+package com.sagban.feecalculator;
 
 import java.io.FileReader;
 import java.util.ArrayList;

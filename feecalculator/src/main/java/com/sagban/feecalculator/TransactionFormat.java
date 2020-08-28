@@ -1,4 +1,4 @@
-package feecalculator;
+package com.sagban.feecalculator;
 
 public class TransactionFormat {
 	public double marketValue,processingfee;
