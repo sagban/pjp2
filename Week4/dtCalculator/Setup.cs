@@ -2,7 +2,6 @@ using System;
 namespace dtCalculator {
     public class Setup {
         
-        
         static private string userName {get; set;}
         static private string language {get; set;}
         public Setup(string lang = "en") {
@@ -46,16 +45,46 @@ namespace dtCalculator {
 
         static private Menu MakeMenuList(){
             var menu = new Menu();
-            var menuItem1 = new MenuItem(1, "Subtract between two dates");
+
+            var menuItem1 = new MenuItem(1,
+             "Subtract between two dates",
+              new SubtractDates());
             menu.Add(menuItem1);
-            var menuItem2 = new MenuItem(2, "Add, Subtract 'n' Days, Months, Weeks to the given date ");
+
+            var menuItem2 = new MenuItem(2,
+             "Add, Subtract 'n' Days, Months, Weeks to the given date",
+             new AddSubToDate());
             menu.Add(menuItem2);
-            var menuItem3 = new MenuItem(3, "Determine the Day of the Week for a given a date");
+
+            var menuItem3 = new MenuItem(3,
+             "Determine the Day of the Week for a given a date",
+             new WeekDay());
             menu.Add(menuItem3);
-            var menuItem4 = new MenuItem(4, "Determine the Week number for a given a date");
+
+            var menuItem4 = new MenuItem(4,
+             "Determine the Week number for a given a date",
+             new WeekNumber());
             menu.Add(menuItem4);
-            var menuItem5 = new MenuItem(5, "Add, Subtract between two dates");
+
+            var menuItem5 = new MenuItem(5,
+             "Try Natural Language Phase",
+             new TryNLP());
             menu.Add(menuItem5);
+
+            var menuItem6 = new MenuItem(6,
+             "Show My History",
+             new MyHistory());
+            menu.Add(menuItem6);
+
+            var menuItem7 = new MenuItem(7,
+             "Show Full History",
+             new FullHistory());
+            menu.Add(menuItem7);
+
+            var menuItem8 = new MenuItem(8,
+             "Exit",
+             new Exit());
+            menu.Add(menuItem8);
             return menu;
         }
     }

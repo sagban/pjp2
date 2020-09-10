@@ -18,13 +18,21 @@ namespace dtCalculator {
         }
         public void Start(){
             DisplayMenu();
-            byte input = UserInput();
-            if(input > 5 || input < 1) throw new InvalidInputExeption("Please Select the valid option");
+            var input = UserInput();
+            if(input > 8 || input < 1) throw new InvalidInputExeption("Please Select the valid option");
+            var item = MenuItems[input - 1];
+            item.Method.Execute();
+            item.Method.DisplayResults();
+            if(input != 8)Restart();
+        }
+        private static int UserInput(){
+            return Convert.ToInt32(Console.ReadLine());
+        }
 
+        private void Restart() {
+            Console.WriteLine("Do you want to continue? (Y/N)");
+            var o = Console.ReadLine();
+            if (o != null && o.ToUpper() == "Y") Start();
         }
-        private byte UserInput(){
-            return Convert.ToByte(Console.ReadLine());
-        }
-        
     }
 }
