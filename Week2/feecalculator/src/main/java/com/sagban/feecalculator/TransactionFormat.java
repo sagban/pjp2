@@ -4,14 +4,15 @@ public class TransactionFormat {
 	public double marketValue,processingfee;
 	public String secid,type,date,priority,identifier,clientid,tranid;
 	public boolean flag;
-	public TransactionFormat(String tranid,
-							 String clientid,
-							 double marketValue,
-							 String secid,
-							 String type,
-							 String date,
-							 String priority,
-							 String identifier
+	public TransactionFormat(
+			String tranid,
+			String clientid,
+			double marketValue,
+			String secid,
+			String type,
+			String date,
+			String priority,
+			String identifier
 	) {
 		super();
 		this.tranid = tranid;
@@ -23,6 +24,4 @@ public class TransactionFormat {
 		this.priority = priority;
 		this.identifier=identifier;
 	}
-
-
 }

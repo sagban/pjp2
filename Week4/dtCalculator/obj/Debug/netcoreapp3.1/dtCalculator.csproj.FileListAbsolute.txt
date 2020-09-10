@@ -1,0 +1,12 @@
+/Users/sagban/pjp2/Week4/dtCalculator/bin/Debug/netcoreapp3.1/dtCalculator.deps.json
+/Users/sagban/pjp2/Week4/dtCalculator/bin/Debug/netcoreapp3.1/dtCalculator.runtimeconfig.json
+/Users/sagban/pjp2/Week4/dtCalculator/bin/Debug/netcoreapp3.1/dtCalculator.runtimeconfig.dev.json
+/Users/sagban/pjp2/Week4/dtCalculator/bin/Debug/netcoreapp3.1/dtCalculator.dll
+/Users/sagban/pjp2/Week4/dtCalculator/bin/Debug/netcoreapp3.1/dtCalculator.pdb
+/Users/sagban/pjp2/Week4/dtCalculator/obj/Debug/netcoreapp3.1/dtCalculator.csprojAssemblyReference.cache
+/Users/sagban/pjp2/Week4/dtCalculator/obj/Debug/netcoreapp3.1/dtCalculator.AssemblyInfoInputs.cache
+/Users/sagban/pjp2/Week4/dtCalculator/obj/Debug/netcoreapp3.1/dtCalculator.AssemblyInfo.cs
+/Users/sagban/pjp2/Week4/dtCalculator/obj/Debug/netcoreapp3.1/dtCalculator.csproj.CoreCompileInputs.cache
+/Users/sagban/pjp2/Week4/dtCalculator/obj/Debug/netcoreapp3.1/dtCalculator.dll
+/Users/sagban/pjp2/Week4/dtCalculator/obj/Debug/netcoreapp3.1/dtCalculator.pdb
+/Users/sagban/pjp2/Week4/dtCalculator/obj/Debug/netcoreapp3.1/dtCalculator.genruntimeconfig.cache

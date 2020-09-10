@@ -1,12 +1,13 @@
 package com.sagban.feecalculator;
 
-import org.springframework.stereotype.Component;
+
+import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.stream.Collectors;
 
-@Component("executeProcessingRules")
+@Service
 public class ExecuteProcessingRules {
 
 	
