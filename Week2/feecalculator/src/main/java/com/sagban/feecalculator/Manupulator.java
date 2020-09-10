@@ -18,11 +18,13 @@ public class Manupulator {
 	Date d2 ;
 	@Autowired
 	ExecuteProcessingRules ep;
+	@Autowired
+	TransactionData td;
 
 	public ArrayList<TransactionFormat> returnElements(){
         SimpleDateFormat sdfo = new SimpleDateFormat("dd-MM-yyyy");
-		getData gd = new getData();
-		al=gd.m1(1);
+		String file="/Users/sagban/pjp2/feecalculator/client.csv";
+		al=td.fromCSV(file);
 		ep.processing(al);
 		al.stream().forEach(i1->System.out.println(i1.clientid+" "+i1.secid+" "+i1.date+" "+i1.processingfee));
 		Comparator<TransactionFormat> c=(a,b)->{

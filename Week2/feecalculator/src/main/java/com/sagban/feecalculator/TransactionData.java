@@ -3,17 +3,17 @@ package com.sagban.feecalculator;
 import java.io.FileReader;
 import java.util.ArrayList;
 import com.opencsv.CSVReader;
+import org.springframework.stereotype.Service;
 
-public class getData {
+@Service
+public class TransactionData {
 
-	
-	public ArrayList  m1(int i) {
+	public ArrayList  fromCSV(String file) {
 		ArrayList<TransactionFormat> al=new ArrayList();
 		 double marketValue=0;
 		 int j;
 		 String secid="",type="",date="",priority="",identifier="",clientid="",tranid="";
 		try {
-			String file="/Users/sagban/pjp2/feecalculator/client.csv";
 	        FileReader filereader = new FileReader(file); 
 	        CSVReader csvReader = new CSVReader(filereader); 
 	        String[] nextRecord; 
